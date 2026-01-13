@@ -33,11 +33,11 @@ app.add_middleware(
 
 
 conn = psycopg2.connect(
-    dbname="gis_db",
-    user="postgres",
-    password="adithk568",
-    host="localhost",
-    port="5432"
+    dbname=DBNAME,
+    user=USER,
+    password=PASSWORD,
+    host=HOST,
+    port=PORT
 )
 
 
