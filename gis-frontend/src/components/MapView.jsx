@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 
-const API_URL = "http://127.0.0.1:8000/get-features";
+const API_URL = "https://gis-8ssz.onrender.com/get-features";
 
 export default function MapView() {
     const mapContainer = useRef(null);
