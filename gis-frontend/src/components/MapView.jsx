@@ -55,9 +55,9 @@ export default function MapView() {
             new maplibregl.Popup()
                 .setLngLat(e.lngLat)
                 .setHTML(`
-          <strong>Tenant:</strong> ${props.tenant_id}<br/>
-          <strong>Epoch:</strong> ${props.epoch_id}<br/>
-          <strong>Area:</strong> ${Number(props.area_sqm).toFixed(2)} m²
+          <strong style="color:black;">Tenant:</strong><span style="color:black;">${props.tenant_id}</span><br/>
+          <strong style="color:black;">Epoch:</strong><span style="color:black;"> ${props.epoch_id}</span><br/>
+          <strong style="color:black;">Area:</strong><span style="color:black;"> ${Number(props.area_sqm).toFixed(2)} m²</span>
         `)
                 .addTo(mapRef.current);
         });
